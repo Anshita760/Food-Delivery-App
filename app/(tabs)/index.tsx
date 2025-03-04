@@ -1,21 +1,10 @@
+import "../../global.css"
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
-import "../../global.css"
+import Navigation from "../../Navigation"
 
 export default function HomeScreen() {
   return (
-    <View style={styles.container}>
-      <Text className="text-blue-400 text-4xl">Code with me!</Text>
-      <StatusBar style="auto"/>
-    </View>
+    <Navigation/>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  }
-});
